@@ -17,7 +17,7 @@ Private, no-account Android raw editor by Pennylume. Plan: the "Calotype: Androi
 ## Build and test
 - `scripts/build-rust.sh [abi]` then `./gradlew assembleDebug --max-workers=1`. Keep `rust/target` (it is the ~20 min cache); `[profile.release]` must match upstream's or the cache misses.
 - C: is nearly full: check `df -h /c` before big builds.
-- `CALOTYPE_SAMPLES=<dir> cargo test --release --manifest-path rust/Cargo.toml` must pass before a commit.
+- `CALOTYPE_SAMPLES=<dir> cargo test --release --manifest-path rust/Cargo.toml` must pass before a commit. On Windows prefix `_LINK_=/DEBUG:NONE` (the test PDB hits LNK1318 and fills the disk).
 - Emulator gates on Limrun, phone and tablet: `lim android create --os-version 15 --model phone|tablet --install <apk> --connect`. `LIM_API_KEY` comes from the environment only, never a file. Git Bash: `MSYS_NO_PATHCONV=1` for adb `/sdcard` paths. Screenshot every step; tap via `element-tree`, never guessed coordinates. Delete instances after use.
 
 ## Git
