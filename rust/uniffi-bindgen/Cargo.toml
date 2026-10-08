@@ -1,0 +1,10 @@
+[package]
+name = "uniffi-bindgen"
+description = "Generates the Kotlin bindings for calotype-bridge"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+uniffi = { version = "0.32", features = ["cli"] }

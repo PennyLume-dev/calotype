@@ -1,0 +1,14 @@
+[workspace]
+resolver = "3"
+members = ["bridge", "uniffi-bindgen"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+rust-version = "1.90"
+publish = false
+
+# Same release profile as the upstream engine workspace, so the shared target cache stays valid.
+[profile.release]
+debug = "line-tables-only"

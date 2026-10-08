@@ -1,0 +1,22 @@
+# Build output
+build/
+.gradle/
+.kotlin/
+rust/target/
+rust/*.log
+# Built by scripts/build-rust.sh
+app/src/main/jniLibs/
+app/src/main/java/com/pennylume/calotype/bridge/
+
+# Secrets and machine files
+local.properties
+keystore.properties
+*.jks
+*.keystore
+.idea/
+*.iml
+hs_err_pid*.log
+
+# Test media and reports (CC0 samples are fetched, never committed)
+samples/
+reports/

@@ -1,0 +1,20 @@
+[package]
+name = "calotype-bridge"
+description = "Calotype's bridge from Kotlin to the raw engine (UniFFI)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lib]
+name = "calotype_bridge"
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+# Upstream engine, pinned. Bump on a schedule, never float on a branch.
+lightcraft-engine = { git = "https://github.com/storytold/lightcraft", rev = "b8df5f472c3f39b614f3606dfd93165a02dfb1a3" }
+rayon = "1"
+serde_json = "1"
+thiserror = "2"
+uniffi = "0.32"

@@ -1,0 +1,13 @@
+Calotype
+Copyright (c) 2026 Pennylume.
+Licensed under the Apache License, Version 2.0 (LICENSE).
+
+Calotype's raw processing is done by the LightCraft engine
+(https://github.com/storytold/lightcraft, commit b8df5f472c3f39b614f3606dfd93165a02dfb1a3),
+Copyright (c) 2026 ArtCraft Team and the LightCraft contributors, used under the MIT License
+or the Apache License, Version 2.0. Its licence texts and NOTICE are in licenses/lightcraft/ and
+ship inside the app. Calotype is an independent project: it is not made, endorsed or supported by
+the LightCraft or ArtCraft teams, and it uses none of their names, logos or art as its own.
+
+The engine bundles the Inter font under the SIL Open Font License 1.1
+(licenses/lightcraft/OFL-Inter.txt).
